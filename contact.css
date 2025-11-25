@@ -1,0 +1,426 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Bricolage Grotesque";
+  background-color: #ffffff;
+}
+
+/* Navbar styling */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 10px 150px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.logo h1 {
+  font-size: 1.4rem;
+  color: #2c2c2c;
+  font-weight: 600;
+}
+
+.logo:hover {
+  transform: translateY(-2px);
+}
+
+/* Navigation links */
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #2c2c2c;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #0781d3;
+}
+
+/* Icons and search */
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-icons input {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 6px 12px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.nav-icons input:focus {
+  border-color: #73e5ae;
+}
+
+.nav-icons a {
+  color: #000000;
+  font-size: 1px;
+  width: 12px;
+  margin-inline: 6px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.nav-icons a:hover {
+  color: #0781d3;
+}
+
+.contact-banner {
+  width: 100%;
+  height: 500px;
+  background-image: url("Rectangle\ 26.png"); /* file yang sudah kamu download */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  /* border: 3px solid #008cff; */
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.contact-banner:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.contact-banner h1 {
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 50px;
+  font-weight: 400;
+  z-index: 1;
+}
+
+/* .contact-grid */
+.contact-grid {
+  margin-inline-start: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  width: 70%;
+  margin: auto;
+}
+
+.card {
+  position: relative;
+  height: 250px;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  color: white;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.malik {
+  grid-row: span 2;
+}
+
+.malik .card {
+  height: 100%;
+}
+
+.malik .card:hover {
+  background-image: url("cat-abt.png");
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.content {
+  position: relative;
+  padding: 15px 20px;
+  z-index: 2;
+}
+
+.card h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.card p {
+  margin: 4px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+}
+
+.card i {
+  width: 18px;
+  height: 18px;
+}
+
+/* bagian form */
+.top-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.info-box {
+  width: 260px;
+  background: #078ae6;
+  color: white;
+  padding: 25px 20px;
+  border-radius: 8px;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+}
+
+.icon-circle {
+  width: 55px;
+  height: 55px;
+  background: white;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-circle svg {
+  font-size: 22px;
+  color: #000000;
+}
+
+.info-box h4 {
+  margin: 8px 0 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.info-box p {
+  margin: 0;
+  font-size: 15px;
+}
+
+.info-box:hover {
+  transform: scale(1.05);
+}
+
+.contact-container {
+  width: 70%;
+  margin: auto;
+  background: #ddd;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+.contact-container h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.desc {
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+.form-grid {
+  display: flex;
+  gap: 20px;
+}
+
+.left {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.left input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  width: 90%;
+}
+
+.right {
+  width: 65%;
+}
+
+.right textarea {
+  width: 90%;
+  height: 170px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  padding: 10px;
+}
+
+.send-btn {
+  margin-top: 20px;
+  padding: 10px 25px;
+  border: none;
+  background: #078ae6;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+
+.send-btn:hover {
+  transform: translatey(-2px);
+  box-shadow: #000000;
+}
+
+/* map */
+.map {
+  margin-top: 100px;
+  width: 80%;
+  min-height: 300px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.map-position h2 {
+  font-size: 40px;
+  font-weight: 500;
+  padding-top: 100px;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+
+.map-position p {
+  font-size: 20px;
+  text-align: center;
+}
+
+.map-img {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.map-img iframe {
+  width: 95%;
+}
+
+/* footer */
+.footer {
+  margin-top: 3rem;
+  background-color: #1b4d75;
+  color: white;
+  padding: 50px 80px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-section h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.footer-section ul {
+  list-style: none;
+  margin-left: -40px;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #e0e0e0;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #999;
+}
+
+.footer-section p {
+  font-size: 14px;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons img {
+  color: white;
+  font-size: 22px;
+  transition: 0.3s;
+  width: 20px;
+  border-radius: 10px;
+}
+
+.social-icons img:hover {
+  color: #f1f1f1;
+  transform: translateY(-5px);
+}
+
+.product-card {
+  opacity: 1;
+  transition: 0.4s ease;
+}
+
+.product-card.hide {
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+}
+
+.product-card.show {
+  opacity: 1;
+  transform: translateY(0);
+}

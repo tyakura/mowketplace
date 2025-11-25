@@ -1,0 +1,434 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Bricolage Grotesque";
+  background-color: #feffed;
+}
+
+/* Navbar styling */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #feffed;
+  padding: 10px 40px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.logo h1 {
+  font-size: 1.4rem;
+  color: #2c2c2c;
+  font-weight: 600;
+}
+
+.logo:hover {
+  transform: translateY(-2px);
+}
+
+/* Navigation links */
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #2c2c2c;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #0781d3;
+}
+
+/* Icons and search */
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-icons input {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 6px 12px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.nav-icons input:focus {
+  border-color: #73e5ae;
+}
+
+.nav-icons a {
+  color: #000000;
+  font-size: 1px;
+  width: 12px;
+  margin-inline: 6px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.nav-icons a:hover {
+  color: #0781d3;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 200px 650px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 15vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* background-image: url(https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEVZpgk3kKvnYxE955yRlA8ls7qz%2FRxYGMR9cOrF0w7BXg96PAW8B2CBWLlbxW9McnP4zkvAHkG5d5TZ8VVk6fMqSjHzOMweKUbSSOOVxGVmmaD9idwoB0PBRI5QOfEZXQX1W6UJ4I5ELm7BLuUlI5fDH8Pa12HPLIAZ0g35NJsFhc%2BdD47ePe10yv80xfvldfLBzyKDwSuM6QmGpXZqEQ%2FdyaHa76lL%2FMyDZZTsGMKK6T%2BttFoYoA9fR4NO1GWDVuU26UFUD7eU0hkDRXWqYnnvMBPyyC2SHG9P7mrpOa9JywEGSWOJNvBeYV4pP8VTf3Y%2B%2Bh6vbEn57X5GUIT9uppc3haBUCxrj3qcSHJfpE8j2oZucmjobldKe8JRcMl4s5E7Py7TUZvU2sO3Nr5TCnf8FvAbXzQ57u6INq27DksCPp7A9yBE54Mp5ZaHrVTYTl76TVb%2BwuQPQGTo3jKHIXSfKAjpTtidis7WA4myCqVv3LKnfyBHwMLU62gNXDc%2FaInGthaF%2FXS4GwQ4dj6kc4qc1ZBWH9Gp0xXhOSJJyFyMBbDLZpGB5p%2FOjalDpC5dy5hu9E59bh%2BJLdyDpA%3D%3D&allow_caching=true&sz=w512); */
+  background-image: url(cat-abt.png);
+}
+
+.container h1 {
+  font-size: 70px;
+  font-weight: 300;
+  width: auto;
+  white-space: nowrap;
+  color: white;
+}
+
+.our-mission {
+  display: flex;
+  background-color: #3282b8;
+  height: 87vh;
+  gap: 5rem;
+  margin: auto;
+}
+
+.om {
+  font-size: 55px;
+  color: #bbe1fa;
+  display: flex;
+  white-space: nowrap;
+  margin-block: auto;
+  margin-left: 10rem;
+}
+
+.our-mission p {
+  color: white;
+  width: 50%;
+  font-size: 20px;
+  margin-block: auto;
+  margin-left: 2rem;
+  line-height: 2;
+}
+.our-vision {
+  /* background-image: url("https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEX2PTzmngc%2BvM5zWnaHPQocByRby2uLwDucqrG%2FzW%2Fdbx1TXo41obhT4qIGH5mYV8LbY38I50emunGfN0HxIIvfZx93%2Fnejodi%2FEVZXR1xx5VVkyTxKHhlGU48brNaTHWD2FIgbDJrUKaZN7HxcEHDLTxtHCAcucdRb2CmhzZnLIs4FU5jZRBw0%2BGjc3yTp5D%2FQLlngcOmzDM1f94t1%2FfmjeiI94QK6%2BqCMiwwbECuqky%2BZ4C0j3jJzKN7RwEL8LGoy94cqbLhVVSMMuDt0BKx6CTfPkBTeVK0atVgKQXrH0rxDcuu964mgrgmkcOuFYspcagFRYMjM9AAemoE6G8%2BICpcioUz2k8Bp9Va09dRo%2FrP%2BC9%2FylxKnUwE2X9%2B2AYVjdRruRrFoTL5SWV24hIz5XrriVAqSEWlP5MtrKP0L4LRVOxvQ6rRiX4A2%2F4d3QKjuEQnGcPCLbfzZGVgBK%2FUxVRe3QsNR8%2F0Fe3ETdsyLNOeUwyGEGZeqtH4vExyznWne5IgrkFcfN7V%2BILsDhq2x5jbqNQWnLGpM7CYl7KQhfWlDAg%2FJu8sY0iY%2FZORJyt6CsgFRyTMqWaqz&allow_caching=true&sz=w512"); */
+  background-image: url(woman-abt.png);
+  color: white;
+  height: 87vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #2c2c2c;
+  margin: 0;
+  font-size: 40px;
+  display: flex;
+  gap: 5rem;
+}
+
+.ov {
+  font-size: 55px;
+  color: #bbe1fa;
+  display: flex;
+  white-space: nowrap;
+  margin-block: auto;
+  margin-left: 10rem;
+}
+
+.our-vision p {
+  width: 50%;
+  font-size: 20px;
+  margin-block: auto;
+  margin-left: 2rem;
+  line-height: 2;
+}
+
+h2 {
+  margin-block-start: 0;
+}
+
+.our-values {
+  display: flex;
+  height: 87vh;
+  gap: 5rem;
+  margin: auto;
+}
+
+.op {
+  font-size: 55px;
+  display: flex;
+  white-space: nowrap;
+  margin-block: auto;
+  margin-left: 10rem;
+}
+
+.our-values p {
+  font-size: 20px;
+  margin-block: auto;
+  margin-left: 2rem;
+  line-height: 3;
+}
+
+.tim {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.tim h1 {
+  margin: auto;
+  font-size: 40px;
+  margin-bottom: 4rem;
+}
+
+.atas {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+.bawah {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 3rem;
+}
+
+.maliq,
+.attaya,
+.hapit,
+.affan,
+.hilmi {
+  height: 50vh;
+  width: 469px;
+}
+
+.maliq p,
+.attaya p,
+.hapit p,
+.affan p,
+.hilmi p {
+  text-align: center;
+  padding-top: 270px;
+  color: white;
+  font-size: 25px;
+  mix-blend-mode: hard-light;
+  text-shadow: #0781d3;
+  transition: 0.3s ease-in-out;
+}
+
+.name :hover {
+  transform: translateY(-2px);
+}
+
+.card {
+  position: relative;
+  margin: auto;
+  width: 450px;
+  height: 450px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.4s;
+}
+
+.card:hover img {
+  filter: brightness(40%);
+  transform: scale(1.05);
+}
+
+.card h1 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+/* Overlay */
+.card .info {
+  margin-block: auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  color: white;
+
+  background: rgba(0, 0, 0, 0.55);
+  opacity: 0;
+  transition: 0.4s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  width: 450px;
+  height: 450px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Nama di bawah gambar */
+.card .affan,
+.malik,
+.hilmi,
+.attaya,
+.hapit h2 {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+/* Box saat hover */
+.card .hover-box {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* supaya teks sejajar tengah */
+  padding-left: auto; /* sejajarkan dengan h1 */
+  opacity: 0;
+  transition: 0.3s;
+  color: white;
+}
+
+.card .hover-box h1 {
+  margin: 0 0 5px 0;
+  font-size: 30px;
+}
+
+.card .hover-box p {
+  margin-left: 50px;
+}
+
+.card:hover .hover-box {
+  opacity: 1;
+}
+
+.card:hover .affan,
+.malik,
+.hilmi,
+.attaya,
+.hapit {
+  opacity: 0;
+}
+
+/* footer */
+.footer {
+  margin-top: 0rem !important;
+  background-color: #1b4d75;
+  color: white;
+  padding: 50px 80px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-section h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.footer-section ul {
+  list-style: none;
+  margin-left: -40px;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #e0e0e0;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #999;
+}
+
+.footer-section p {
+  font-size: 14px;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons img {
+  color: white;
+  font-size: 22px;
+  transition: 0.3s;
+  width: 20px;
+  border-radius: 10px;
+}
+
+.social-icons img:hover {
+  color: #f1f1f1;
+  transform: translateY(-5px);
+}

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop</title>
+    <link rel="stylesheet" href="shop.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="navbar">
+      <div href="index.html" class="logo">
+        <img src="logorevamp.png" alt="Meowketplace Logo" />
+        <h1>Meowketplace</h1>
+      </div>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="shop.css">Shop</a>
+        <a href="abt.html">About Us</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-icons">
+        <a href="#"><i data-lucide="handbag"></i></a>
+        <a href="#"><i data-lucide="heart"></i></a>
+        <a href="#"><i data-lucide="user-round"></i></a>
+        <input type="text" placeholder="Search" />
+      </div>
+    </header>
+
+    <div class="container">
+      <h1 class="bnshp">Shop</h1>
+    </div>
+
+    <!-- shop section  -->
+
+    <div class="shop-container">
+      <div class="shop-header">
+        <h2 class="shop-title">Shop</h2>
+        <div class="shop-controls">
+          <div class="control-dropdown">
+            <label for="show-count">Show</label>
+            <select id="show-count" class="dropdown">
+              <option value="15">15</option>
+              <option value="30">30</option>
+              <option value="50">50</option>
+            </select>
+            <span class="dropdown-arrow">↓</span>
+          </div>
+          <div class="control-dropdown">
+            <label for="sort-by">Sort</label>
+            <select id="sort-by" class="dropdown">
+              <option value="default">Default</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="price-desc">Price: High to Low</option>
+            </select>
+            <span class="dropdown-arrow">↓</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <aside class="sidebar">
+          <div class="category-header">
+            <h3>Category</h3>
+          </div>
+
+          <div class="category-list">
+            <label class="category-item checked">
+              <input type="checkbox" checked />
+              <span>All</span>
+            </label>
+            <label class="category-item">
+              <input type="checkbox" />
+              <span>Toys</span>
+            </label>
+            <label class="category-item">
+              <input type="checkbox" />
+              <span>Cleaning Supplies</span>
+            </label>
+            <label class="category-item">
+              <input type="checkbox" />
+              <span>Food</span>
+            </label>
+          </div>
+        </aside>
+
+        <main class="product-grid">
+          <article class="product-card" data-category="bed">
+            <div class="card-image">
+              <img src="donutbed.png" alt="donutbed" />
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Cat Bed – Soft Donut Cushion</h3>
+              <div class="card-footer">
+                <div class="price-group">
+                  <span class="old-price">$10.00</span>
+                  <span class="new-price">$7.50</span>
+                </div>
+                <div class="icon-group">
+                  <i data-lucide="heart"></i>
+                  <i data-lucide="shopping-bag"></i>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="product-card" data-category="bed">
+            <div class="card-image">
+              <img src="donutbed.png" alt="donutbed" />
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Cat Bed – Soft Donut Cushion</h3>
+              <div class="card-footer">
+                <div class="price-group">
+                  <span class="old-price">$10.00</span>
+                  <span class="new-price">$7.50</span>
+                </div>
+                <div class="icon-group">
+                  <i data-lucide="heart"></i>
+                  <i data-lucide="shopping-bag"></i>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="bed">
+            <div class="card-image">
+              <img src="donutbed.png" alt="donutbed" />
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Cat Bed – Soft Donut Cushion</h3>
+              <div class="card-footer">
+                <div class="price-group">
+                  <span class="old-price">$10.00</span>
+                  <span class="new-price">$7.50</span>
+                </div>
+                <div class="icon-group">
+                  <i data-lucide="heart"></i>
+                  <i data-lucide="shopping-bag"></i>
+                </div>
+              </div>
+            </div>
+          </article>
+        </main>
+      </div>
+    </div>
+    <!-- footer  -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h2>MeowketPlace</h2>
+          <div class="social-icons">
+            <img
+              src="https://i.pinimg.com/736x/3c/0b/52/3c0b5296e29c391d50a7580b3e949a34.jpg"
+              alt=""
+            />
+            <img
+              src="https://i.pinimg.com/736x/85/f7/74/85f774ea1ecd6a296bd080790725d812.jpg"
+              alt=""
+            />
+            <img
+              src="https://i.pinimg.com/736x/db/19/33/db19332a23a44f772c5a1855a8aabf70.jpg"
+              alt=""
+            />
+            <img
+              src="https://i.pinimg.com/736x/da/1c/d5/da1cd5e80c7d65c991a8a370b921ded4.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3>Menu</h3>
+          <ul>
+            <li><a href="#">Catalog</a></li>
+            <li><a href="#">Promotions</a></li>
+            <li><a href="#">Delivery and payment</a></li>
+            <li><a href="contact.html">Contacts</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Catalog</h3>
+          <ul>
+            <li><a href="#">Food</a></li>
+            <li><a href="#">Bed</a></li>
+            <li><a href="#">Toys</a></li>
+            <li><a href="#">Cleaning Supplies</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <p>+6200 834 9134</p>
+          <p>Open for 8.00 to 20.00</p>
+          <p>meowketplace@gmail.com</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Font Awesome Icon -->
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>

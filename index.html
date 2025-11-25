@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meowketplace</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="styles.css " />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://lucide.dev/icons/handbag"></script>
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div href="index.html" class="logo">
+        <img src="logorevamp.png" alt="Meowketplace Logo" />
+        <h1>Meowketplace</h1>
+      </div>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="abt.html">About Us</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-icons">
+        <a href="#"><i data-lucide="handbag"></i></a>
+        <a href="#"><i data-lucide="heart"></i></a>
+        <a href="#"><i data-lucide="user-round"></i></a>
+        <input type="text" placeholder="Search" />
+      </div>
+    </header>
+    <div class="scroll-animate">
+      <section class="hero">
+        <div class="hero-text">
+          <h2>Discount<br />on first purchase</h2>
+          <h1>28%</h1>
+          <a href="#" class="btn">Go to the catalog</a>
+        </div>
+        <div class="hero-image">
+          <img src="image 28.png" alt="Cute cat" />
+        </div>
+      </section>
+    </div>
+    <div class="scroll-animate">
+      <section class="categories">
+        <div class="category bed">
+          <h3>Bed</h3>
+          <img src="Gambar Product 1.png" alt="Cat Bed" />
+        </div>
+
+        <div class="category toys">
+          <h3>Toys</h3>
+          <img src="Gambar Product 2.png" alt="Cat Toy" />
+        </div>
+
+        <div class="category food">
+          <h3>Food</h3>
+          <img src="Gambar Product 3.png" alt="Cat Food" />
+        </div>
+
+        <div class="category cleaning">
+          <h3>Cleaning Supplies</h3>
+          <img src="Gambar Product 4.png" alt="Cleaning Brush" />
+        </div>
+      </section>
+    </div>
+    <div class="scroll-animate">
+      <!-- the best of thi week -->
+      <section id="store">
+        <section class="showcase-container">
+          <h2>The best of this week</h2>
+
+          <nav class="category-tabs">
+            <button class="tab-btn" onclick="filterProducts('toys')">
+              Toys
+            </button>
+            <button class="tab-btn" onclick="filterProducts('bed')">Bed</button>
+            <button class="tab-btn" onclick="filterProducts('cs')">
+              Cleaning Supplies
+            </button>
+            <button class="tab-btn" onclick="filterProducts('food')">
+              Food
+            </button>
+          </nav>
+
+          <div class="product-grid">
+            <!-- bagian toys  -->
+            <div class="product-list">
+              <article class="product-card" data-category="toys">
+                <div class="card-image">
+                  <img src="sapu-removebg-preview.png" alt="Cat Tassel Toy" />
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">
+                    DIY Cat Wand Toy with a Wooden Twist ...
+                  </h3>
+                  <div class="card-footer">
+                    <div class="price-group">
+                      <span class="old-price">$4.54</span>
+                      <span class="new-price">$3.26</span>
+                    </div>
+                    <div class="icon-group">
+                      <i data-lucide="heart"></i>
+                      <i data-lucide="shopping-bag"></i>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="product-list">
+              <article class="product-card" data-category="toys">
+                <div class="card-image">
+                  <img src="Product 5 (4).png" alt="petstages" />
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Petstages Tower of Tracks cat t...</h3>
+                  <div class="card-footer">
+                    <div class="price-group">
+                      <span class="old-price">$6,54 </span>
+                      <span class="new-price">$5.26</span>
+                    </div>
+                    <div class="icon-group">
+                      <i data-lucide="heart"></i>
+                      <i data-lucide="shopping-bag"></i>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="product-list">
+              <article class="product-card" data-category="toys">
+                <div class="card-image">
+                  <img src="Product 5 (2).png" alt="Bell Teaser Toy" />
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Bell Design Cat Teaser Toy</h3>
+                  <div class="card-footer">
+                    <div class="price-group">
+                      <span class="old-price">$0.47</span>
+                      <span class="new-price">$0.33</span>
+                    </div>
+                    <div class="icon-group">
+                      <i data-lucide="heart"></i>
+                      <i data-lucide="shopping-bag"></i>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="product-list">
+              <article class="product-card" data-category="toys">
+                <div class="card-image">
+                  <img src="Product 5 (3).png" alt="Feather Cat Toys" />
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Cat Toys Cute Cat Toys with...</h3>
+                  <div class="card-footer">
+                    <div class="price-group">
+                      <span class="old-price">$13</span>
+                      <span class="new-price">$7</span>
+                    </div>
+                    <div class="icon-group">
+                      <i data-lucide="heart"></i>
+                      <i data-lucide="shopping-bag"></i>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- bagian cleaning-->
+            <div class="product-list">
+              <article class="product-card" data-category="cs">
+                <div class="card-image">
+                  <img src="sisir.png" alt="sisir" />
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">
+                    DIY Cat Wand Toy with a Wooden Twist ...
+                  </h3>
+                  <div class="card-footer">
+                    <div class="price-group">
+                      <span class="old-price">$4.54</span>
+                      <span class="new-price">$3.26</span>
+                    </div>
+                    <div class="icon-group">
+                      <i data-lucide="heart"></i>
+                      <i data-lucide="shopping-bag"></i>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="product-list">
+              <article class="product-card" data-category="cs">
+                <div class="card-image">
+                  <img src="Product 5 (4).png" alt="petstages" />
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Petstages Tower of Tracks cat t...</h3>
+                  <div class="card-footer">
+                    <div class="price-group">
+                      <span class="old-price">$6,54 </span>
+                      <span class="new-price">$5.26</span>
+                    </div>
+                    <div class="icon-group">
+                      <i data-lucide="heart"></i>
+                      <i data-lucide="shopping-bag"></i>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="product-list">
+              <article class="product-card" data-category="cs">
+                <div class="card-image">
+                  <img src="Product 5 (2).png" alt="Bell Teaser Toy" />
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Bell Design Cat Teaser Toy</h3>
+                  <div class="card-footer">
+                    <div class="price-group">
+                      <span class="old-price">$0.47</span>
+                      <span class="new-price">$0.33</span>
+                    </div>
+                    <div class="icon-group">
+                      <i data-lucide="heart"></i>
+                      <i data-lucide="shopping-bag"></i>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="product-list">
+              <article class="product-card" data-category="cs">
+                <div class="card-image">
+                  <img src="Product 5 (3).png" alt="Feather Cat Toys" />
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Cat Toys Cute Cat Toys with...</h3>
+                  <div class="card-footer">
+                    <div class="price-group">
+                      <span class="old-price">$13</span>
+                      <span class="new-price">$7</span>
+                    </div>
+                    <div class="icon-group">
+                      <i data-lucide="heart"></i>
+                      <i data-lucide="shopping-bag"></i>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- bagian bed  -->
+            <div class="product-list">
+              <article class="product-card" data-category="bed">
+                <div class="card-image">
+                  <img src="bedcave.png" alt="Luxury Cat Bed" />
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">SE-PB037 Luxury Cat Bed Cave</h3>
+                  <div class="card-footer">
+                    <div class="price-group">
+                      <span class="old-price">$54.83</span>
+                      <span class="new-price">$39.47</span>
+                    </div>
+                    <div class="icon-group">
+                      <i data-lucide="heart"></i>
+                      <i data-lucide="shopping-bag"></i>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="product-list">
+              <article class="product-card" data-category="bed">
+                <div class="card-image">
+                  <img src="donutbed.png" alt="donutbed" />
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Cat Bed – Soft Donut Cushion</h3>
+                  <div class="card-footer">
+                    <div class="price-group">
+                      <span class="old-price">$10.00</span>
+                      <span class="new-price">$7.50</span>
+                    </div>
+                    <div class="icon-group">
+                      <i data-lucide="heart"></i>
+                      <i data-lucide="shopping-bag"></i>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="product-list">
+              <article class="product-card" data-category="bed">
+                <div class="card-image">
+                  <img src="Product 5 (6).png" alt="pluchcb" />
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">covered plush cat bed</h3>
+                  <div class="card-footer">
+                    <div class="price-group">
+                      <span class="old-price">$7,47 </span>
+                      <span class="new-price">$6.33</span>
+                    </div>
+                    <div class="icon-group">
+                      <i data-lucide="heart"></i>
+                      <i data-lucide="shopping-bag"></i>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="product-list">
+              <article class="product-card" data-category="bed">
+                <div class="card-image">
+                  <img src="domehouse.png" alt="domehouse" />
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Cat Bed Dome House with Ears</h3>
+                  <div class="card-footer">
+                    <div class="price-group">
+                      <span class="old-price">$11.56 </span>
+                      <span class="new-price">$8.09</span>
+                    </div>
+                    <div class="icon-group">
+                      <i data-lucide="heart"></i>
+                      <i data-lucide="shopping-bag"></i>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- bagian food -->
+            <div class="product-list">
+              <article class="product-card" data-category="food">
+                <div class="card-image">
+                  <img src="Product 5 (5).png" alt="double eat" />
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">
+                    double dog or cat bowls with an auto ...
+                  </h3>
+                  <div class="card-footer">
+                    <div class="price-group">
+                      <span class="old-price">$7,47 </span>
+                      <span class="new-price">$6.33</span>
+                    </div>
+                    <div class="icon-group">
+                      <i data-lucide="heart"></i>
+                      <i data-lucide="shopping-bag"></i>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="product-list">
+              <article class="product-card" data-category="food">
+                <div class="card-image">
+                  <img src="Product 5 (7).png" alt="whiskas" />
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title"> Excel cat food. </h3>
+                  <div class="card-footer">
+                    <div class="price-group">
+                      <span class="old-price">$13.89 </span>
+                      <span class="new-price">$10.9</span>
+                    </div>
+                    <div class="icon-group">
+                      <i data-lucide="heart"></i>
+                      <i data-lucide="shopping-bag"></i>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="product-list">
+              <article class="product-card" data-category="food">
+                <div class="card-image">
+                  <img src="watson-removebg-preview.png" alt="watson" />
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">
+                    Watson Premium Cat Food – Salmon Flavor
+                  </h3>
+                  <div class="card-footer">
+                    <div class="price-group">
+                      <span class="old-price">$10,46 </span>
+                      <span class="new-price">$6,99</span>
+                    </div>
+                    <div class="icon-group">
+                      <i data-lucide="heart"></i>
+                      <i data-lucide="shopping-bag"></i>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="product-list">
+              <article class="product-card" data-category="food">
+                <div class="card-image">
+                  <img src="ricocat-removebg-preview.png" alt="ricocat" />
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">
+                     Ricocat Complete Nutrition Cat Food – Ocean Mix 
+                  </h3>
+                  <div class="card-footer">
+                    <div class="price-group">
+                      <span class="old-price">$13.89 </span>
+                      <span class="new-price">$8.49</span>
+                    </div>
+                    <div class="icon-group">
+                      <i data-lucide="heart"></i>
+                      <i data-lucide="shopping-bag"></i>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+      </section>
+    </div>
+    <div class="scroll-animate">
+      <!-- help from doctor -->
+      <section class="banner">
+        <div class="banner-content">
+          <h1>Need help from a specialist?</h1>
+          <p>We will help you choose food, treats, or a costume for a walk.</p>
+          <button class="btn-call">Callback</button>
+        </div>
+        <div class="banner-image">
+          <img src="image 23.png" alt="Call-image" />
+        </div>
+      </section>
+    </div>
+    <div class="scroll-animate">
+      <section class="choose-us">
+        <h2>Why Choose Us?</h2>
+
+        <div class="features">
+          <div class="feature">
+            <!-- <i data-lucide="gift"></i> -->
+            <img src="kado300px.png" alt="gift-icon" />
+            <h3>Bonus System</h3>
+            <p>Compliance with internationally recognized quality standards.</p>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="feature">
+            <!-- <i data-lucide="car"></i> -->
+            <img src="car300px.png" alt="car-icon" />
+            <h3>Free Delivery</h3>
+            <p>
+              Free delivery in Odesa Applies to orders of 300 UAH or more
+              Delivery within 24 hours.
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="feature">
+            <!-- <i data-lucide="medal"></i> -->
+            <img src="medal300px.png" alt="medal-icon" />
+            <h3>Always with Care</h3>
+            <p>An extended loyalty system for regular customers.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="scroll-animate">
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-section">
+            <h2>MeowketPlace</h2>
+            <div class="social-icons">
+              <img
+                src="https://i.pinimg.com/736x/3c/0b/52/3c0b5296e29c391d50a7580b3e949a34.jpg"
+                alt=""
+              />
+              <img
+                src="https://i.pinimg.com/736x/85/f7/74/85f774ea1ecd6a296bd080790725d812.jpg"
+                alt=""
+              />
+              <img
+                src="https://i.pinimg.com/736x/db/19/33/db19332a23a44f772c5a1855a8aabf70.jpg"
+                alt=""
+              />
+              <img
+                src="https://i.pinimg.com/736x/da/1c/d5/da1cd5e80c7d65c991a8a370b921ded4.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h3>Menu</h3>
+            <ul>
+              <li><a href="#">Catalog</a></li>
+              <li><a href="#">Promotions</a></li>
+              <li><a href="#">Delivery and payment</a></li>
+              <li><a href="contact.html">Contacts</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Catalog</h3>
+            <ul>
+              <li><a href="#">Food</a></li>
+              <li><a href="#">Bed</a></li>
+              <li><a href="#">Toys</a></li>
+              <li><a href="#">Cleaning Supplies</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Contact</h3>
+            <p>+6200 834 9134</p>
+            <p>Open for 8.00 to 20.00</p>
+            <p>meowketplace@gmail.com</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+    <!-- Font Awesome Icon -->
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
